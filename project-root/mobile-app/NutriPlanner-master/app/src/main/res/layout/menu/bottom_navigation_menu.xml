@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Главная"
+        android:icon="@android:drawable/btn_star"/>
+
+    <item
+        android:id="@+id/menu_progress"
+        android:title="Прогресс"
+        android:icon="@android:drawable/btn_star"/>
+
+    <item
+        android:id="@+id/menu_children"
+        android:title="Диеты"
+        android:icon="@android:drawable/btn_star"/>
+
+    <item
+        android:id="@+id/menu_recipes"
+        android:icon="@android:drawable/btn_star"
+        android:title="Рецепты" />
+</menu>

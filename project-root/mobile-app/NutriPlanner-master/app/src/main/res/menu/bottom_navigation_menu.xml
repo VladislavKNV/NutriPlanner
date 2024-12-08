@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Главная"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/menu_progress"
+        android:title="Прогресс"
+        android:icon="@drawable/progress1"/>
+
+    <item
+        android:id="@+id/menu_cart"
+        android:title="Корзина"
+        android:visible="false"
+        android:icon="@drawable/ic_launcher_foreground"/>
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/accaunt"
+        android:title="Профиль" />
+</menu>

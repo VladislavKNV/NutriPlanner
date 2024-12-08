@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".View.Survey.WeightFragment">
+
+    <TextView
+        android:id="@+id/tvw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Укажите свой вес"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtSurveyCurrentWeight1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="Tекущий"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSurveyCurrentWeight"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtSurveyDesiredWeight1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Желаемый"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="40dp"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true"
+            android:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSurveyDesiredWeight"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:textSize="20sp"
+                android:textColor="@color/main_color"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout>
