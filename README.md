@@ -48,21 +48,19 @@
 ### 2. Запуск сервера Node.js
 
 1. Перейдите в директорию `/server`:
-   bash:
+   ```bash
    cd server
-   
+   ```
 
 2. Установите необходимые пакеты Node.js:
-   bash:
+   ```bash
    npm install
    npm install express body-parser mysql2 nodemailer
-
+   ```
 
 3. Настройте файл handlers.js для подключения к базе данных и SMTP-серверу. Замените значения на свои собственные:
 
-   const mysql = require('mysql2');
-   const nodemailer = require('nodemailer');
-
+   ```bash
    const pool = mysql.createPool({
       host: '127.0.0.1',
       port: 3306,
@@ -83,11 +81,12 @@
          pass: "your_email_password"
       }
    });
+   ```
    
 4. Запустите сервер:
-   bash:
+   ```bash
    node app.js
-   
+   ```
    
    Сервер будет доступен по адресу `http://localhost:3000` или порту, указанному в `app.js`.
 
@@ -97,11 +96,15 @@
 
 2. В файле GetDateDate.java замените URL на адрес вашего сервера:
 
+   ```bash
    URL url = new URL("https://your-server-url.com/currentDateTime");
+   ```
 
 3. В файле RetrofitInstance.java укажите базовый URL вашего сервера:
 
+   ```bash
    private static final String BASE_URL = "https://your-server-url.com/nutriPlanner/";
+   ```
 
 4. Установите APK-файл на своем Android-устройстве, передав его на устройство и открыв, или используйте эмулятор для запуска приложения.
 
@@ -131,3 +134,9 @@
 
 - Android SDK
 - Java и Kotlin. Зависимости управляются внутри приложения через систему сборки (например, Gradle).
+
+
+## Лицензия
+
+Этот проект распространяется под лицензией [MIT](https://choosealicense.com/licenses/mit/).
+
