@@ -1,0 +1,47 @@
+<resources>
+    <!-- Base application theme.
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    -->
+    <style name="BottomNavigationText1" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BottomNavigationTextActive1" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <!-- Define custom styles here -->
+    <style name="BottomNavigationText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">14sp</item> <!-- Set your desired text size -->z
+    </style>
+
+    <style name="BottomNavigationTextActive" parent="BottomNavigationText">
+        <item name="android:textSize">15sp</item> <!-- Set your desired text size -->
+        <!-- Set additional styles for active buttons if needed -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CommonTextViewStyleAccountLeft">
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginBottom">17dp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CommonTextViewStyleAccountRight">
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">17dp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

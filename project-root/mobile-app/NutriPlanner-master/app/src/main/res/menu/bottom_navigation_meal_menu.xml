@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_meal"
+        android:title="Список"
+        android:icon="@drawable/list1"/>
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Поиск"
+        android:icon="@drawable/search_list"/>
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:title="Любимое"
+        android:icon="@drawable/favorite0"/>
+
+</menu>
